@@ -168,7 +168,8 @@ public class NN {
         //we get every weight multiplied by its corresponding error (the output node error the weight is connected to)
         Matrix weightsHiddenOutputTransposed = Matrix.transpose(weightsHiddenOutput);
         Matrix hiddenError = Matrix.mult(weightsHiddenOutputTransposed,outputError);
-
+        
+        //outputError above should now be outpurError but instead gradientOutput??? TODO try this
 
 
         Matrix hiddenGradient = new Matrix(hidden.rows,hidden.columns);
