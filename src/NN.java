@@ -170,6 +170,9 @@ public class NN {
         Matrix hiddenError = Matrix.mult(weightsHiddenOutputTransposed,outputError);
         
         //outputError above should now be outpurError but instead gradientOutput??? TODO try this
+        // see this video https://www.youtube.com/watch?v=GlcnxUlrtek&ab_channel=WelchLabs
+        
+        //if you want to have multiple hidden layers then this is the way to go
 
 
         Matrix hiddenGradient = new Matrix(hidden.rows,hidden.columns);
